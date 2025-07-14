@@ -1,0 +1,24 @@
+* {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+}
+body,html{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container{
+  border: 2px solid #ccc;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+#username{
+  margin-bottom: 15px;
+}
+#button{
+  margin-top: 15px;
+}
