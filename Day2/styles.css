@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #250654, #960080);
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px;
+  box-shadow: 0px 4px 30px -10px rgb(0, 0, 0);
+}
+
+.box h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.box form .input-box {
+  width: 100%;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  margin-top: 30px;
+  position: relative;
+}
+
+.box form .input-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  padding: 7px 0px;
+}
+.box form .input-box label {
+  position: absolute;
+  left: 0px;
+  font-size: 25px;
+  top: 8px;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.box form .input-box input:focus + label,
+.box form .input-box input:valid + label{
+  top: -15px;
+  font-size: 18px;
+  color: blue;
+}
+.box button{
+  border: none;
+  margin-top: 30px;
+  font-size: 25px;
+  padding: 7px 20px;
+  background-color:#250654;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+}
+.box button:active{
+  color: black;
+  background-color: white;
+  transform: 0.2s;
+}
