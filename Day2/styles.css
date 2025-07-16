@@ -44,28 +44,28 @@
 .box form .input-box label {
   position: absolute;
   left: 0px;
-  font-size: 25px;
+  font-size: 20px;
   top: 8px;
   pointer-events: none;
   transition: 0.2s;
 }
 .box form .input-box input:focus + label,
-.box form .input-box input:valid + label{
+.box form .input-box input:valid + label {
   top: -15px;
   font-size: 18px;
   color: blue;
 }
-.box button{
+.box button {
   border: none;
   margin-top: 30px;
   font-size: 25px;
   padding: 7px 20px;
-  background-color:#250654;
+  background-color: #250654;
   color: #fff;
   float: right;
   cursor: pointer;
 }
-.box button:active{
+.box button:active {
   color: black;
   background-color: white;
   transform: 0.2s;
