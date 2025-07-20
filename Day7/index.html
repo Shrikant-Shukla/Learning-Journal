@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <fieldset>
+          <legend>Register</legend>
+          <div class="form-control">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your Name" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="fullName">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="Password2">Confirm Password</label>
+            <input
+              type="password"
+              id="password2"
+              placeholder="Re-type your password"
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <div class="terms-check">
+            <label>
+              <input type="checkbox" id="terms" />I agree to the terms and
+              condition
+            </label>
+          </div>
+          <div>
+            <small id="termsError" class="error-msg"></small>
+          </div>
+          <button type="submit" id="submitBtn">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <div id="successMessage" style="display: none">
+      🎉 Registration successful!
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
